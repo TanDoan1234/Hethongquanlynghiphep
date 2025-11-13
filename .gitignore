@@ -5,3 +5,8 @@ server/database.json
 .DS_Store
 *.log
 
+# Environment variables
+.env
+.env.local
+.env.production
+
