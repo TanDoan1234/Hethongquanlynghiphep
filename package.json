@@ -8,8 +8,10 @@
     "server": "cd server && node index.js",
     "client": "cd client && npm start",
     "install-all": "npm install && cd server && npm install && cd ../client && npm install",
-    "build": "cd client && npm install && npm run build",
-    "vercel-build": "npm run build"
+    "build": "cd client && npm install && CI=false npm run build",
+    "vercel-build": "npm run build",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install"
   },
   "keywords": [
     "leave",
